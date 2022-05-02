@@ -17,8 +17,13 @@
   color: var(--title-text-color);
 }
 
+// навигация
 .header__navigation {
   margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header__item {
@@ -29,8 +34,13 @@
   margin-right: 0;
 }
 
+// хедер лист
 .header__list {
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header__link {
