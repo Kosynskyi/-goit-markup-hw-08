@@ -1,3 +1,9 @@
+.picture-section {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .picture__item {
   position: relative;
   margin-right: 30px;
