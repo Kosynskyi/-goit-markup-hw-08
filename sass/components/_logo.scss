@@ -3,15 +3,24 @@
   font-family: var(--secondary-font);
   color: var(--accent-color);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.14;
+  }
 }
 
 .logo__footer {
+  display: block;
   margin-top: 0;
   margin-bottom: 20px;
-  display: flex;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .logo__span--footer {
@@ -19,10 +28,32 @@
 }
 
 .logo__header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo__span--header {
   color: var(--title-text-color);
 }
+
+// @media screen and (min-width: 480px) {
+//   width: 480px;
+// }
+
+// @media screen and (min-width: 768px) {
+//   width: 768px;
+// }
+
+// @media screen and (min-width: 1200px) {
+//   width: 1200px;
+// }

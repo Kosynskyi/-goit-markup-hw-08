@@ -1,20 +1,39 @@
 .clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .clients__logo {
   overflow: hidden;
-  margin-right: 30px;
+  margin: 15px;
+  width: 210px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
@@ -22,16 +41,12 @@
   }
 }
 
-.clients__logo:last-child {
-  margin-right: 0;
-}
-
 .clients__item {
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--icons-color);
-  width: 170px;
+  width: 210px;
   height: 92px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,6 +55,14 @@
   &:focus {
     color: var(--accent-color);
     background-color: var(--bg-white-color);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
