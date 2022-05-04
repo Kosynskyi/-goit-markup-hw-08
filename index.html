@@ -52,24 +52,24 @@
           </li>
         </ul>
         <!-- добавляем кнопку и меню -->
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="menu-icon" width="40" height="40">
+            <use
+              class="menu-open"
+              href="./images/icons/sprite.svg#mobile-menu"
+            ></use>
+            <use
+              class="menu-close"
+              href="./images/icons/sprite.svg#mobile-close"
+            ></use>
+          </svg>
+        </button>
         <div class="menu-container">
-          <button
-            class="menu-button"
-            type="button"
-            data-menu-button
-            aria-expanded="false"
-          >
-            <svg class="menu-icon" width="40" height="40">
-              <use
-                class="menu-open"
-                href="./images/icons/sprite.svg#mobile-menu"
-              ></use>
-              <use
-                class="menu-close"
-                href="./images/icons/sprite.svg#mobile-close"
-              ></use>
-            </svg>
-          </button>
           <!-- мобильное меню -->
           <div class="mobile-menu" data-menu>
             <nav class="mobile-header__navigation">
