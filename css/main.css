@@ -63,7 +63,6 @@ body {
 }
 
 .container {
-  outline: 1px solid red;
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
@@ -449,10 +448,6 @@ body {
   transform: translateX(0);
 }
 
-.mobile-header__navigation {
-  outline: 1px solid red;
-}
-
 .mobile-header__list {
   display: block;
   margin-top: auto;
@@ -464,7 +459,6 @@ body {
 }
 
 .mobile-header__item {
-  outline: 1px solid red;
   margin-top: 0;
   margin-bottom: 32px;
   font-weight: 500;
@@ -617,6 +611,13 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__container {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
 .modal__title {
   display: block;
   margin-top: 0;
@@ -627,6 +628,13 @@ body {
   letter-spacing: 0.03em;
   text-align: justify;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+    text-align: center;
+  }
 }
 
 .modal__thumb {
@@ -640,6 +648,14 @@ body {
   display: block;
   margin-bottom: 4px;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__value {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
 }
 
 .modal__item {
@@ -716,6 +732,14 @@ body {
   color: var(--title-text-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__feedback {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+}
+
 .modal__feedback::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -726,6 +750,13 @@ body {
   align-items: center;
   margin-bottom: 30px;
   /* border: 1px solid red; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal__agreement {
@@ -1430,33 +1461,25 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .filter-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio__list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio__list {
-    width: 354px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .portfolio__item {
+  margin-top: 0;
   margin: 15px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 450px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__item:hover, .portfolio__item:focus {
@@ -1464,22 +1487,16 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: 354px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    margin-top: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 370px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__item:nth-child(3n + 3) {
-    margin-right: 0;
-  }
-}
-
-.portfolio__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .portfolio__item:hover .portfolio__description {
@@ -1500,13 +1517,19 @@ body {
   opacity: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 77px 24px;
+  padding: 110px 24px;
   height: 100%;
   font-size: 18px;
   line-height: 1.56;
   color: var(--bg-white-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__description {
+    padding: 49px 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1516,10 +1539,11 @@ body {
 }
 
 .portfolio__img {
+  margin-top: 0;
   width: 450px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .portfolio__img {
     width: 354px;
   }
@@ -1527,7 +1551,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .portfolio__img {
-    margin-top: 0;
+    width: 370px;
   }
 }
 
