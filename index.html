@@ -288,30 +288,69 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="picture__list">
             <li class="picture__item">
-              <img
-                class="picture__img"
-                src="./images/picture-section/image-1.jpg"
-                alt="человек пишет код"
-                width="370"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./images/picture-section/image-1_lg.jpg    1x,
+                    ./images/picture-section/image-1@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- default -->
+                <img
+                  class="picture__img"
+                  src="./images/picture-section/image-1_lg.jpg"
+                  alt="человек пишет код"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="picture__descr">Десктопные приложения</p>
             </li>
             <li class="picture__item">
-              <img
-                class="picture__img"
-                src="./images/picture-section/image-2.jpg"
-                alt="человек сидит за ноутбуком"
-                width="370"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./images/picture-section/image-2_lg.jpg    1x,
+                    ./images/picture-section/image-2@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- default -->
+                <img
+                  class="picture__img"
+                  src="./images/picture-section/image-2_lg.jpg"
+                  alt="человек сидит за ноутбуком"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="picture__descr">Мобильные приложения</p>
             </li>
             <li class="picture__item">
-              <img
-                class="picture__img"
-                src="./images/picture-section/image-3.jpg"
-                alt="человек держит планшет"
-                width="370"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./images/picture-section/image-3_lg.jpg    1x,
+                    ./images/picture-section/image-3@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- default -->
+                <img
+                  class="picture__img"
+                  src="./images/picture-section/image-3_lg.jpg"
+                  alt="человек держит планшет"
+                  width="370"
+                  loading="lazy"
+                />
+              </picture>
               <p class="picture__descr">Дизайнерские решения</p>
             </li>
           </ul>
@@ -324,13 +363,44 @@
           <ul class="team__list">
             <!-- 1-й работник -->
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team-section/img-igor.jpg"
-                alt="фото игоря демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./images/team-section/img-igor_lg.jpg    1x,
+                    ./images/team-section/img-igor@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-section/img-igor_md.jpg    1x,
+                    ./images/team-section/img-igor@2x_md.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-section/img-igor_sm.jpg    1x,
+                    ./images/team-section/img-igor@2x_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <!-- базове -->
+                <img
+                  class="team__photo"
+                  src="./images/team-section/img-igor_sm.jpg"
+                  alt="фото игоря демьяненко"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__exposition">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -394,13 +464,44 @@
             </li>
             <!-- 2-й работник -->
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team-section/img-olga.jpg"
-                alt="фото ольги репины"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./images/team-section/img-olga_lg.jpg    1x,
+                    ./images/team-section/img-olga@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-section/img-olga_md.jpg    1x,
+                    ./images/team-section/img-olga@2x_md.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-section/img-olga_sm.jpg    1x,
+                    ./images/team-section/img-olga@2x_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <!-- deault -->
+                <img
+                  class="team__photo"
+                  src="./images/team-section/img-olga_sm.jpg"
+                  alt="фото ольги репины"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__exposition">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -463,13 +564,40 @@
             </li>
             <!-- 3-й работник -->
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team-section/img-nikolay.jpg"
-                alt="фото николая тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./images/team-section/img-nikolay_lg.jpg    1x,
+                    ./images/team-section/img-nikolay@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg" />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-section/img-nikolay_md.jpg    1x,
+                    ./images/team-section/img-nikolay@2x_md.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg" />
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-section/img-nikolay_sm.jpg    1x,
+                    ./images/team-section/img-nikolay@2x_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg" />
+                <!-- deault -->
+                <img
+                  class="team__photo"
+                  src="./images/team-section/img-nikolay_sm.jpg"
+                  alt="фото николая тарасова"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+              /></picture>
               <div class="team__exposition">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -532,13 +660,44 @@
             </li>
             <!-- 4-й работник -->
             <li class="team__item">
-              <img
-                class="team__photo"
-                src="./images/team-section/img-mihail.jpg"
-                alt="фото михаила ермакова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./images/team-section/img-mihail_lg.jpg    1x,
+                    ./images/team-section/img-mihail@2x_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-section/img-mihail_md.jpg    1x,
+                    ./images/team-section/img-mihail@2x_md.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-section/img-mihail_sm.jpg    1x,
+                    ./images/team-section/img-mihail@2x_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <!-- deault -->
+                <img
+                  class="team__photo"
+                  src="./images/team-section/img-mihail_sm.jpg"
+                  alt="фото михаила ермакова"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__exposition">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__profession">UI Designer</p>
