@@ -21,9 +21,9 @@
 }
 
 .menu-icon {
-  position: absolute;
-  top: -20px;
-  right: 20px;
+  position: fixed;
+  top: 10px;
+  right: 15px;
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -172,7 +172,7 @@
 .mobile-header__social-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
