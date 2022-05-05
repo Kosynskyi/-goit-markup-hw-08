@@ -650,7 +650,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -676,7 +676,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px;
+  padding: 30px;
   background-color: var(--bg-white-color);
   border-radius: 4px;
 }
@@ -685,6 +685,7 @@ img {
   .modal__container {
     min-width: 450px;
     min-height: 609px;
+    padding: 40px;
   }
 }
 
@@ -698,13 +699,20 @@ img {
 .modal__title {
   display: block;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .modal__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -795,7 +803,7 @@ img {
 .modal__feedback {
   display: block;
   width: 320px;
-  height: 120px;
+  height: 80px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -803,6 +811,12 @@ img {
   resize: none;
   padding: 12px 16px;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .modal__feedback {
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
