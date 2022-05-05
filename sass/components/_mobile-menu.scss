@@ -156,7 +156,9 @@
 }
 
 .mobile-header__social-networks {
-  //   outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  // outline: 1px solid red;
 }
 
 .mobile-header__social-item {
