@@ -34,7 +34,7 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: stretch;
   }
@@ -95,9 +95,15 @@
 
 .portfolio__inner-link {
   border: 1px solid #eeeeee;
-  border-top: none;
-  flex-grow: 1;
+  border: none;
   text-decoration: none;
+}
+
+.portfolio__inner-thumb {
+  display: flex;
+  flex-grow: 1;
+
+  padding: 20px 24px;
 }
 
 .portfolio__products {
@@ -108,7 +114,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
   font-size: 18px;
-  padding-left: 24px;
+  // padding-left: 24px;
 }
 
 .portfolio__type {
@@ -117,5 +123,6 @@
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
-  padding-left: 24px;
+  // padding-left: 24px;
+  // padding-bottom: 20px;
 }
