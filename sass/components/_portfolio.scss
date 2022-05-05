@@ -93,12 +93,12 @@
   }
 }
 
-.portfolio__inner {
+.portfolio__inner-link {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-  // нове
-  // height: 100%;
+  flex-grow: 1;
+  text-decoration: none;
 }
 
 .portfolio__products {
