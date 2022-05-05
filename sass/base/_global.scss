@@ -1,3 +1,17 @@
+body {
+  margin: 0, auto;
+  font-family: var(--primary-font);
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -24,16 +38,6 @@ img {
     margin-bottom: 50px;
     font-size: 36px;
   }
-}
-
-body {
-  margin: 0, auto;
-  font-family: var(--primary-font);
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: var(--title-text-color);
-  font-weight: 400;
-  font-size: 14px;
 }
 
 .section {

@@ -21,7 +21,6 @@
 }
 
 .menu-icon {
-  position: fixed;
   top: 10px;
   right: 15px;
   &:hover,
@@ -40,6 +39,10 @@
 
 .menu-button.is-open .menu-close {
   opacity: 1;
+}
+
+.menu-button.is-open .menu-icon {
+  position: fixed;
 }
 
 .menu-container {

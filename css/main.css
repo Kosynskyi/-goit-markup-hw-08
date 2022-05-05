@@ -10,6 +10,20 @@
   --secondary-font: Raleway;
 }
 
+body {
+  margin: 0, auto;
+  font-family: var(--primary-font);
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -38,16 +52,6 @@ img {
     margin-bottom: 50px;
     font-size: 36px;
   }
-}
-
-body {
-  margin: 0, auto;
-  font-family: var(--primary-font);
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: var(--title-text-color);
-  font-weight: 400;
-  font-size: 14px;
 }
 
 .section {
@@ -387,7 +391,6 @@ body {
 }
 
 .menu-icon {
-  position: fixed;
   top: 10px;
   right: 15px;
 }
@@ -406,6 +409,10 @@ body {
 
 .menu-button.is-open .menu-close {
   opacity: 1;
+}
+
+.menu-button.is-open .menu-icon {
+  position: fixed;
 }
 
 .menu-container {
@@ -1628,13 +1635,21 @@ body {
   opacity: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 110px 24px;
+  padding: 30px 24px;
   height: 100%;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.56;
   color: var(--bg-white-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio__description {
+    padding: 110px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 @media screen and (min-width: 768px) {
