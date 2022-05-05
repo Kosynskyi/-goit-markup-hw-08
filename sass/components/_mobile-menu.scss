@@ -65,7 +65,7 @@
   // outline: 1px solid green;
   display: flex;
   flex-direction: column;
-  padding: 15px 10px;
+  padding: 48px 40px;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -126,10 +126,14 @@
 .mobile-header__phone {
   text-decoration: none;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 25px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-header__mail {
@@ -168,8 +172,12 @@
 .mobile-header__social-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
