@@ -1,5 +1,5 @@
 .text-section {
-  padding-bottom: 0;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 60px;
@@ -29,12 +29,15 @@
 }
 
 .feature__text {
-  width: 450px;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
+
+  @media screen and (width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
@@ -49,7 +52,7 @@
   display: flex;
   flex-wrap: wrap;
   // для телефона
-  @media screen and (min-width: 480px) {
+  @media screen and (width: 480px) {
     width: 480px;
   }
 
@@ -65,7 +68,11 @@
 }
 
 .feature__item {
-  width: 450px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
@@ -78,6 +85,9 @@
     }
     &:nth-child(n + 2) {
       margin-bottom: 0;
+    }
+    @media screen and (width: 480px) {
+      width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -92,7 +102,6 @@
 }
 
 .feature__svg {
-  width: 450px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -100,6 +109,10 @@
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
